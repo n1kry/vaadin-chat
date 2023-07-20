@@ -1,0 +1,31 @@
+@media screen and (max-width: 740px) {
+ .chat-view {
+    flex-direction: column-reverse;
+  }
+ .chat-view aside {
+    width: 100% !important;
+    flex-direction: row;
+  }
+ .chat-view aside header {
+    display: none;
+  }
+ .chat-view aside vaadin-tabs {
+    flex: 1 1 auto;
+    overflow: auto;
+  }
+ .chat-view aside vaadin-tabs vaadin-tab.justify-between {
+    justify-content: flex-start;
+  }
+}
+vaadin-grid-cell-content {
+    white-space: initial;
+}
+vaadin-vertical-layout {
+    height: 100%;
+}
+.separator {
+    height: 10px;
+    width: 100%;
+    background-color: #ccc;
+    cursor: row-resize;
+}
